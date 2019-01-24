@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <title>名师介绍</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+        html, body {
+            position: relative;
+            font-size: 100px;
+            height: 100%;
+        }
+        body {
+            background: #eee;
+            font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+            font-size: 14px;
+            color:#000;
+            margin: 0;
+            padding: 0;
+        }
+        .swiper-container {
+            width: 100%;
+            height: 100%;
+        }
+        .swiper-slide {
+            text-align: center;
+            background: #fff;
+
+            /* Center slide text vertically */
+            display: -webkit-box;
+            display: -ms-flexbox;
+            display: -webkit-flex;
+            display: flex;
+            -webkit-box-pack: center;
+            -ms-flex-pack: center;
+            -webkit-justify-content: center;
+            justify-content: center;
+            -webkit-box-align: center;
+            -ms-flex-align: center;
+            -webkit-align-items: center;
+            align-items: center;
+        }
+        .mainBox{
+            height: 100%;
+        }
+        .swiper-slide img{
+            width: 100%;
+            height: 100%;
+        }
+        .loadingBox,.detailBox{display: none;height: 100%}
+        .progress {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            margin-left: -2.3rem;
+            margin-top: -.85rem;
+            width: 4.6rem;
+            height: .3rem;
+            background: #FFF;
+            border-radius: .15rem;
+        }
+        .run {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 0;
+            height: .3rem;
+            border-radius: .15rem;
+            transition: .3s;
+
+            background: -webkit-linear-gradient(left bottom, #5CB85C 0%, #5CB85C 25%, #74C274 25%, #74C274 50%, #5CB85C 50%, #5CB85C 75%, #74C274 75%, #74C274 100%);
+            background-size: .3rem .3rem;
+            animation: loadingMove .5s linear infinite both;
+        }
+
+        @keyframes loadingMove {
+            0% {
+                background-position: 0 0;
+            }
+            100% {
+                background-position: 0 -.3rem;
+            }
+        }
+        .icon-arrow-up {
+            left: 0;
+            right: 0;
+            margin: 0 auto;
+            bottom: 2%;
+            position: absolute;
+            z-index: 99999;
+            width: 25px;
+            height: 25px;
+            -webkit-animation: fadeInUp 1s 0.8s infinite;
+            animation: fadeInUp 1s 0.8s infinite;
+        }
+        .icon-arrow-up i {
+            display: block;
+            width: 100%;
+            height: 100%;
+            background: url("./img/icon-arrow-up.png") no-repeat;
+            background-size: 200px 25px;
+        }
+        .fadeInUp {
+            -webkit-animation-name: fadeInUp;
+            animation-name: fadeInUp;
+        }
+        @-webkit-keyframes fadeInUp {
+            from {
+                opacity: 0;
+                -webkit-transform: translate3d(0, 100%, 0);
+                transform: translate3d(0, 100%, 0);
+            }
+            to {
+                opacity: 1;
+                -webkit-transform: none;
+                transform: none;
+            }
+        }
+        @keyframes fadeInUp {
+            from {
+                opacity: 0;
+                -webkit-transform: translate3d(0, 100%, 0);
+                transform: translate3d(0, 100%, 0);
+            }
+            to {
+                opacity: 1;
+                -webkit-transform: none;
+                transform: none;
+            }
+        }
+    </style>
+    <!--REM-->
+    <script>
+        ~function () {
+            let computed = function () {
+                //=>DES-W:设计稿宽度 DEV-W:设备的宽度
+                let desW = 750;
+                let devW = document.documentElement.clientWidth;
+                if (devW >= 750) {
+                    document.documentElement.style.fontSize = '100px';
+                    return;
+                }
+                document.documentElement.style.fontSize = devW / desW * 100 + 'px';
+            };
+            computed();
+            window.addEventListener('resize', computed, false);
+        }();
+    </script>
+</head>
+<body>
+<main class="mainBox">
+    <!--LOADING-->
+    <section class="loadingBox">
+        <div class="progress">
+            <div class="run"></div>
+        </div>
+    </section>
+
+    <!--DETAIL-->
+    <section class="detailBox">
+        <div class="icon-arrow-up animated">
+            <i></i>
+        </div>
+        <!--SWIPER-->
+        <div class="swiper-container">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide"><img src="./img/1.png" alt=""></div>
+                <div class="swiper-slide"><img src="./img/2.png" alt=""></div>
+                <div class="swiper-slide"><img src="./img/3.png" alt=""></div>
+                <div class="swiper-slide"><img src="./img/4.png" alt=""></div>
+                <div class="swiper-slide"><img src="./img/5.png" alt=""></div>
+                <div class="swiper-slide"><img src="./img/6.png" alt=""></div>
+                <div class="swiper-slide"><img src="./img/7.png" alt=""></div>
+                <div class="swiper-slide"><img src="./img/8.png" alt=""></div>
+                <div class="swiper-slide"><img src="./img/9.png" alt=""></div>
+                <div class="swiper-slide"><img src="./img/10.png" alt=""></div>
+                <div class="swiper-slide"><img src="./img/11.png" alt=""></div>
+                <div class="swiper-slide"><img src="./img/12.png" alt=""></div>
+                <div class="swiper-slide"><img src="./img/13.png" alt=""></div>
+                <div class="swiper-slide"><img src="./img/14.png" alt=""></div>
+                <div class="swiper-slide"><img src="./img/15.png" alt=""></div>
+                <div class="swiper-slide"><img src="./img/16.png" alt=""></div>
+                <div class="swiper-slide"><img src="./img/17.png" alt=""></div>
+                <div class="swiper-slide"><img src="./img/18.png" alt=""></div>
+                <div class="swiper-slide"><img src="./img/19.png" alt=""></div>
+                <div class="swiper-slide"><img src="./img/20.png" alt=""></div>
+                <div class="swiper-slide"><img src="./img/21.png" alt=""></div>
+                <div class="swiper-slide"><img src="./img/22.png" alt=""></div>
+                <div class="swiper-slide"><img src="./img/23.png" alt=""></div>
+                <div class="swiper-slide"><img src="./img/24.png" alt=""></div>
+                <div class="swiper-slide"><img src="./img/25.png" alt=""></div>
+                <div class="swiper-slide"><img src="./img/26.png" alt=""></div>
+                <div class="swiper-slide"><img src="./img/27.png" alt=""></div>
+                <div class="swiper-slide"><img src="./img/28.png" alt=""></div>
+                <div class="swiper-slide"><img src="./img/29.png" alt=""></div>
+                <div class="swiper-slide"><img src="./img/30.png" alt=""></div>
+                <div class="swiper-slide"><img src="./img/31.png" alt=""></div>
+                <div class="swiper-slide"><img src="./img/32.png" alt=""></div>
+                <div class="swiper-slide"><img src="./img/33.png" alt=""></div>
+                <div class="swiper-slide"><img src="./img/34.png" alt=""></div>
+                <div class="swiper-slide"><img src="./img/35.png" alt=""></div>
+                <div class="swiper-slide"><img src="./img/36.png" alt=""></div>
+                <div class="swiper-slide"><img src="./img/37.png" alt=""></div>
+                <div class="swiper-slide"><img src="./img/38.png" alt=""></div>
+                <div class="swiper-slide"><img src="./img/39.png" alt=""></div>
+                <div class="swiper-slide"><img src="./img/40.png" alt=""></div>
+                <div class="swiper-slide"><img src="./img/41.png" alt=""></div>
+                <div class="swiper-slide"><img src="./img/42.png" alt=""></div>
+                <div class="swiper-slide"><img src="./img/43.png" alt=""></div>
+                <div class="swiper-slide"><img src="./img/44.png" alt=""></div>
+                <div class="swiper-slide"><img src="./img/45.png" alt=""></div>
+                <div class="swiper-slide"><img src="./img/46.png" alt=""></div>
+                <div class="swiper-slide"><img src="./img/47.png" alt=""></div>
+                <div class="swiper-slide"><img src="./img/48.png" alt=""></div>
+                <div class="swiper-slide"><img src="./img/49.png" alt=""></div>
+                <div class="swiper-slide"><img src="./img/50.png" alt=""></div>
+                <div class="swiper-slide"><img src="./img/51.png" alt=""></div>
+                <div class="swiper-slide"><img src="./img/52.png" alt=""></div>
+                <div class="swiper-slide"><img src="./img/53.png" alt=""></div>
+                <div class="swiper-slide"><img src="./img/54.png" alt=""></div>
+                <div class="swiper-slide"><img src="./img/55.png" alt=""></div>
+                <div class="swiper-slide"><img src="./img/56.png" alt=""></div>
+                <div class="swiper-slide"><img src="./img/57.png" alt=""></div>
+            </div>
+        </div>
+    </section>
+</main>
+
+<!--IMPORT JS-->
+<script src="js/zepto.min.js"></script>
+<script src="js/swiper.min.js"></script>
+<script src="js/index.js"></script>
+</body>
+</html>
