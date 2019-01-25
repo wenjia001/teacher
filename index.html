@@ -5,6 +5,7 @@
     <meta name="viewport"
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <title>名师介绍</title>
+    <link rel="stylesheet" href="./css/swiper.min.css">
     <style>
         * {
             margin: 0;
@@ -52,7 +53,7 @@
             width: 100%;
             height: 100%;
         }
-        .loadingBox,.detailBox{display: none;height: 100%}
+        .loadingBox,.detailBox{display: block;height: 100%}
         .progress {
             position: absolute;
             top: 50%;
@@ -154,12 +155,6 @@
 </head>
 <body>
 <main class="mainBox">
-    <!--LOADING-->
-    <section class="loadingBox">
-        <div class="progress">
-            <div class="run"></div>
-        </div>
-    </section>
 
     <!--DETAIL-->
     <section class="detailBox">
@@ -169,63 +164,63 @@
         <!--SWIPER-->
         <div class="swiper-container">
             <div class="swiper-wrapper">
-                <div class="swiper-slide"><img data-src="./img/1.png" alt="" class="swiper-lazy"></div>
-                <div class="swiper-slide"><img data-src="./img/2.png" alt="" class="swiper-lazy"></div>
-                <div class="swiper-slide"><img data-src="./img/3.png" alt="" class="swiper-lazy"></div>
-                <div class="swiper-slide"><img data-src="./img/4.png" alt="" class="swiper-lazy"></div>
-                <div class="swiper-slide"><img data-src="./img/5.png" alt="" class="swiper-lazy"></div>
-                <div class="swiper-slide"><img data-src="./img/6.png" alt="" class="swiper-lazy"></div>
-                <div class="swiper-slide"><img data-src="./img/7.png" alt="" class="swiper-lazy"></div>
-                <div class="swiper-slide"><img data-src="./img/8.png" alt="" class="swiper-lazy"></div>
-                <div class="swiper-slide"><img data-src="./img/9.png" alt="" class="swiper-lazy"></div>
-                <div class="swiper-slide"><img data-src="./img/10.png" alt="" class="swiper-lazy"></div>
-                <div class="swiper-slide"><img data-src="./img/11.png" alt="" class="swiper-lazy"></div>
-                <div class="swiper-slide"><img data-src="./img/12.png" alt="" class="swiper-lazy"></div>
-                <div class="swiper-slide"><img data-src="./img/13.png" alt="" class="swiper-lazy"></div>
-                <div class="swiper-slide"><img data-src="./img/14.png" alt="" class="swiper-lazy"></div>
-                <div class="swiper-slide"><img data-src="./img/15.png" alt="" class="swiper-lazy"></div>
-                <div class="swiper-slide"><img data-src="./img/16.png" alt="" class="swiper-lazy"></div>
-                <div class="swiper-slide"><img data-src="./img/17.png" alt="" class="swiper-lazy"></div>
-                <div class="swiper-slide"><img data-src="./img/18.png" alt="" class="swiper-lazy"></div>
-                <div class="swiper-slide"><img data-src="./img/19.png" alt="" class="swiper-lazy"></div>
-                <div class="swiper-slide"><img data-src="./img/20.png" alt="" class="swiper-lazy"></div>
-                <div class="swiper-slide"><img data-src="./img/21.png" alt="" class="swiper-lazy"></div>
-                <div class="swiper-slide"><img data-src="./img/22.png" alt="" class="swiper-lazy"></div>
-                <div class="swiper-slide"><img data-src="./img/23.png" alt="" class="swiper-lazy"></div>
-                <div class="swiper-slide"><img data-src="./img/24.png" alt="" class="swiper-lazy"></div>
-                <div class="swiper-slide"><img data-src="./img/25.png" alt="" class="swiper-lazy"></div>
-                <div class="swiper-slide"><img data-src="./img/26.png" alt="" class="swiper-lazy"></div>
-                <div class="swiper-slide"><img data-src="./img/27.png" alt="" class="swiper-lazy"></div>
-                <div class="swiper-slide"><img data-src="./img/28.png" alt="" class="swiper-lazy"></div>
-                <div class="swiper-slide"><img data-src="./img/29.png" alt="" class="swiper-lazy"></div>
-                <div class="swiper-slide"><img data-src="./img/30.png" alt="" class="swiper-lazy"></div>
-                <div class="swiper-slide"><img data-src="./img/31.png" alt="" class="swiper-lazy"></div>
-                <div class="swiper-slide"><img data-src="./img/32.png" alt="" class="swiper-lazy"></div>
-                <div class="swiper-slide"><img data-src="./img/33.png" alt="" class="swiper-lazy"></div>
-                <div class="swiper-slide"><img data-src="./img/34.png" alt="" class="swiper-lazy"></div>
-                <div class="swiper-slide"><img data-src="./img/35.png" alt="" class="swiper-lazy"></div>
-                <div class="swiper-slide"><img data-src="./img/36.png" alt="" class="swiper-lazy"></div>
-                <div class="swiper-slide"><img data-src="./img/37.png" alt="" class="swiper-lazy"></div>
-                <div class="swiper-slide"><img data-src="./img/38.png" alt="" class="swiper-lazy"></div>
-                <div class="swiper-slide"><img data-src="./img/39.png" alt="" class="swiper-lazy"></div>
-                <div class="swiper-slide"><img data-src="./img/40.png" alt="" class="swiper-lazy"></div>
-                <div class="swiper-slide"><img data-src="./img/41.png" alt="" class="swiper-lazy"></div>
-                <div class="swiper-slide"><img data-src="./img/42.png" alt="" class="swiper-lazy"></div>
-                <div class="swiper-slide"><img data-src="./img/43.png" alt="" class="swiper-lazy"></div>
-                <div class="swiper-slide"><img data-src="./img/44.png" alt="" class="swiper-lazy"></div>
-                <div class="swiper-slide"><img data-src="./img/45.png" alt="" class="swiper-lazy"></div>
-                <div class="swiper-slide"><img data-src="./img/46.png" alt="" class="swiper-lazy"></div>
-                <div class="swiper-slide"><img data-src="./img/47.png" alt="" class="swiper-lazy"></div>
-                <div class="swiper-slide"><img data-src="./img/48.png" alt="" class="swiper-lazy"></div>
-                <div class="swiper-slide"><img data-src="./img/49.png" alt="" class="swiper-lazy"></div>
-                <div class="swiper-slide"><img data-src="./img/50.png" alt="" class="swiper-lazy"></div>
-                <div class="swiper-slide"><img data-src="./img/51.png" alt="" class="swiper-lazy"></div>
-                <div class="swiper-slide"><img data-src="./img/52.png" alt="" class="swiper-lazy"></div>
-                <div class="swiper-slide"><img data-src="./img/53.png" alt="" class="swiper-lazy"></div>
-                <div class="swiper-slide"><img data-src="./img/54.png" alt="" class="swiper-lazy"></div>
-                <div class="swiper-slide"><img data-src="./img/55.png" alt="" class="swiper-lazy"></div>
-                <div class="swiper-slide"><img data-src="./img/56.png" alt="" class="swiper-lazy"></div>
-                <div class="swiper-slide"><img data-src="./img/57.png" alt="" class="swiper-lazy"></div>
+                <div class="swiper-slide"><img data-src="./img/1.png" alt="" class="swiper-lazy"><div class="swiper-lazy-preloader"></div></div>
+                <div class="swiper-slide"><img data-src="./img/2.png" alt="" class="swiper-lazy"><div class="swiper-lazy-preloader"></div></div>
+                <div class="swiper-slide"><img data-src="./img/3.png" alt="" class="swiper-lazy"><div class="swiper-lazy-preloader"></div></div>
+                <div class="swiper-slide"><img data-src="./img/4.png" alt="" class="swiper-lazy"><div class="swiper-lazy-preloader"></div></div>
+                <div class="swiper-slide"><img data-src="./img/5.png" alt="" class="swiper-lazy"><div class="swiper-lazy-preloader"></div></div>
+                <div class="swiper-slide"><img data-src="./img/6.png" alt="" class="swiper-lazy"><div class="swiper-lazy-preloader"></div></div>
+                <div class="swiper-slide"><img data-src="./img/7.png" alt="" class="swiper-lazy"><div class="swiper-lazy-preloader"></div></div>
+                <div class="swiper-slide"><img data-src="./img/8.png" alt="" class="swiper-lazy"><div class="swiper-lazy-preloader"></div></div>
+                <div class="swiper-slide"><img data-src="./img/9.png" alt="" class="swiper-lazy"><div class="swiper-lazy-preloader"></div></div>
+                <div class="swiper-slide"><img data-src="./img/10.png" alt="" class="swiper-lazy"><div class="swiper-lazy-preloader"></div></div>
+                <div class="swiper-slide"><img data-src="./img/11.png" alt="" class="swiper-lazy"><div class="swiper-lazy-preloader"></div></div>
+                <div class="swiper-slide"><img data-src="./img/12.png" alt="" class="swiper-lazy"><div class="swiper-lazy-preloader"></div></div>
+                <div class="swiper-slide"><img data-src="./img/13.png" alt="" class="swiper-lazy"><div class="swiper-lazy-preloader"></div></div>
+                <div class="swiper-slide"><img data-src="./img/14.png" alt="" class="swiper-lazy"><div class="swiper-lazy-preloader"></div></div>
+                <div class="swiper-slide"><img data-src="./img/15.png" alt="" class="swiper-lazy"><div class="swiper-lazy-preloader"></div></div>
+                <div class="swiper-slide"><img data-src="./img/16.png" alt="" class="swiper-lazy"><div class="swiper-lazy-preloader"></div></div>
+                <div class="swiper-slide"><img data-src="./img/17.png" alt="" class="swiper-lazy"><div class="swiper-lazy-preloader"></div></div>
+                <div class="swiper-slide"><img data-src="./img/18.png" alt="" class="swiper-lazy"><div class="swiper-lazy-preloader"></div></div>
+                <div class="swiper-slide"><img data-src="./img/19.png" alt="" class="swiper-lazy"><div class="swiper-lazy-preloader"></div></div>
+                <div class="swiper-slide"><img data-src="./img/20.png" alt="" class="swiper-lazy"><div class="swiper-lazy-preloader"></div></div>
+                <div class="swiper-slide"><img data-src="./img/21.png" alt="" class="swiper-lazy"><div class="swiper-lazy-preloader"></div></div>
+                <div class="swiper-slide"><img data-src="./img/22.png" alt="" class="swiper-lazy"><div class="swiper-lazy-preloader"></div></div>
+                <div class="swiper-slide"><img data-src="./img/23.png" alt="" class="swiper-lazy"><div class="swiper-lazy-preloader"></div></div>
+                <div class="swiper-slide"><img data-src="./img/24.png" alt="" class="swiper-lazy"><div class="swiper-lazy-preloader"></div></div>
+                <div class="swiper-slide"><img data-src="./img/25.png" alt="" class="swiper-lazy"><div class="swiper-lazy-preloader"></div></div>
+                <div class="swiper-slide"><img data-src="./img/26.png" alt="" class="swiper-lazy"><div class="swiper-lazy-preloader"></div></div>
+                <div class="swiper-slide"><img data-src="./img/27.png" alt="" class="swiper-lazy"><div class="swiper-lazy-preloader"></div></div>
+                <div class="swiper-slide"><img data-src="./img/28.png" alt="" class="swiper-lazy"><div class="swiper-lazy-preloader"></div></div>
+                <div class="swiper-slide"><img data-src="./img/29.png" alt="" class="swiper-lazy"><div class="swiper-lazy-preloader"></div></div>
+                <div class="swiper-slide"><img data-src="./img/30.png" alt="" class="swiper-lazy"><div class="swiper-lazy-preloader"></div></div>
+                <div class="swiper-slide"><img data-src="./img/31.png" alt="" class="swiper-lazy"><div class="swiper-lazy-preloader"></div></div>
+                <div class="swiper-slide"><img data-src="./img/32.png" alt="" class="swiper-lazy"><div class="swiper-lazy-preloader"></div></div>
+                <div class="swiper-slide"><img data-src="./img/33.png" alt="" class="swiper-lazy"><div class="swiper-lazy-preloader"></div></div>
+                <div class="swiper-slide"><img data-src="./img/34.png" alt="" class="swiper-lazy"><div class="swiper-lazy-preloader"></div></div>
+                <div class="swiper-slide"><img data-src="./img/35.png" alt="" class="swiper-lazy"><div class="swiper-lazy-preloader"></div></div>
+                <div class="swiper-slide"><img data-src="./img/36.png" alt="" class="swiper-lazy"><div class="swiper-lazy-preloader"></div></div>
+                <div class="swiper-slide"><img data-src="./img/37.png" alt="" class="swiper-lazy"><div class="swiper-lazy-preloader"></div></div>
+                <div class="swiper-slide"><img data-src="./img/38.png" alt="" class="swiper-lazy"><div class="swiper-lazy-preloader"></div></div>
+                <div class="swiper-slide"><img data-src="./img/39.png" alt="" class="swiper-lazy"><div class="swiper-lazy-preloader"></div></div>
+                <div class="swiper-slide"><img data-src="./img/40.png" alt="" class="swiper-lazy"><div class="swiper-lazy-preloader"></div></div>
+                <div class="swiper-slide"><img data-src="./img/41.png" alt="" class="swiper-lazy"><div class="swiper-lazy-preloader"></div></div>
+                <div class="swiper-slide"><img data-src="./img/42.png" alt="" class="swiper-lazy"><div class="swiper-lazy-preloader"></div></div>
+                <div class="swiper-slide"><img data-src="./img/43.png" alt="" class="swiper-lazy"><div class="swiper-lazy-preloader"></div></div>
+                <div class="swiper-slide"><img data-src="./img/44.png" alt="" class="swiper-lazy"><div class="swiper-lazy-preloader"></div></div>
+                <div class="swiper-slide"><img data-src="./img/45.png" alt="" class="swiper-lazy"><div class="swiper-lazy-preloader"></div></div>
+                <div class="swiper-slide"><img data-src="./img/46.png" alt="" class="swiper-lazy"><div class="swiper-lazy-preloader"></div></div>
+                <div class="swiper-slide"><img data-src="./img/47.png" alt="" class="swiper-lazy"><div class="swiper-lazy-preloader"></div></div>
+                <div class="swiper-slide"><img data-src="./img/48.png" alt="" class="swiper-lazy"><div class="swiper-lazy-preloader"></div></div>
+                <div class="swiper-slide"><img data-src="./img/49.png" alt="" class="swiper-lazy"><div class="swiper-lazy-preloader"></div></div>
+                <div class="swiper-slide"><img data-src="./img/50.png" alt="" class="swiper-lazy"><div class="swiper-lazy-preloader"></div></div>
+                <div class="swiper-slide"><img data-src="./img/51.png" alt="" class="swiper-lazy"><div class="swiper-lazy-preloader"></div></div>
+                <div class="swiper-slide"><img data-src="./img/52.png" alt="" class="swiper-lazy"><div class="swiper-lazy-preloader"></div></div>
+                <div class="swiper-slide"><img data-src="./img/53.png" alt="" class="swiper-lazy"><div class="swiper-lazy-preloader"></div></div>
+                <div class="swiper-slide"><img data-src="./img/54.png" alt="" class="swiper-lazy"><div class="swiper-lazy-preloader"></div></div>
+                <div class="swiper-slide"><img data-src="./img/55.png" alt="" class="swiper-lazy"><div class="swiper-lazy-preloader"></div></div>
+                <div class="swiper-slide"><img data-src="./img/56.png" alt="" class="swiper-lazy"><div class="swiper-lazy-preloader"></div></div>
+                <div class="swiper-slide"><img data-src="./img/57.png" alt="" class="swiper-lazy"><div class="swiper-lazy-preloader"></div></div>
             </div>
         </div>
     </section>
@@ -234,6 +229,15 @@
 <!--IMPORT JS-->
 <script src="js/zepto.min.js"></script>
 <script src="js/swiper.min.js"></script>
-<script src="js/index.js"></script>
+<script>
+    var swiper = new Swiper('.swiper-container', {
+        direction: 'vertical',
+        loop : true,
+        lazy: {
+            loadPrevNext: true,
+            lazyLoadingInPrevNextAmount: 3
+        },
+    });
+</script>
 </body>
 </html>
