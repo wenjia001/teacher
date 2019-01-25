@@ -53,9 +53,12 @@ let detailRender = (function ($) {
             var swiper = new Swiper('.swiper-container', {
                 direction: 'vertical',
                 loop : true,
+                lazyLoading : true,
+                lazyLoadingInPrevNext : true,
+                lazyLoadingInPrevNextAmount: 4
             });
         }
     }
 })(Zepto);
 
-loadingRender.init();
+detailRender.init();
